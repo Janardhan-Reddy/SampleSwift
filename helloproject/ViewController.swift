@@ -24,22 +24,7 @@ class ViewController: UIViewController {
     }
     
     func submit() {
-        guard let name = nameField.text else {
-            show("No name to submit")
-            return
-        }
         
-        guard let address = addressField.text else {
-            show("No address to submit")
-            return
-        }
-        
-        guard let phone = phoneField.text else {
-            show("No phone to submit")
-            return
-        }
-        
-        sendToServer(name, address: address, phone: phone)
     }
     
     func sendToServer(name: String, address: String, phone: String) {
